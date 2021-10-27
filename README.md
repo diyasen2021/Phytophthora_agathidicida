@@ -1,0 +1,2 @@
+# Phytophthora_agathidicida
+Phytophthora_agathidicida genome project
