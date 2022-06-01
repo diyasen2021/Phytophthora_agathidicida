@@ -19,10 +19,13 @@ AF <- toGRanges("Allele_frequency-1.txt")
 rxlr <- toGRanges("Paga_3770v2.rxlrs_forcircos.bed")
 head(rxlr)
 
-#png("plot.png", width = 1500, height = 700)
+# Set the plot params
+pp<-getDefaultPlotParams(plot.type = 4)
+pp$data1height <- 150
+
 # Ideogram
-kp <- plotKaryotype(genome = custom.genome, plot.type = 4, labels.plotter = NULL)
-kpAddChromosomeNames(kp, cex=0.5, srt=45, yoffset = -2)
+kp <- plotKaryotype(genome = custom.genome, plot.type = 4, labels.plotter = NULL, plot.params = pp)
+kpAddChromosomeNames(kp, cex=0.5, srt=20, yoffset =5)
 kp <- kpAddBaseNumbers(kp, tick.dist = 2e6, cex=0.5, units="Mb", tick.len = 3)
 
 # rxlr
