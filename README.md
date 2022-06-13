@@ -1,2 +1,2 @@
-# Phytophthora_agathidicida
-Phytophthora_agathidicida genome project
+# Github repo
+Phytophthora_agathidicida genome project 
